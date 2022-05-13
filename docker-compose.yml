@@ -3,7 +3,7 @@ version: '3.4'
 services:
   s_apigateway:
     container_name: c_apigateway
-    image: salihcantekin/apigateway
+    image: metytc/apigateway
     build:
       context: .
       dockerfile: APIGateway/Dockerfile
@@ -15,7 +15,7 @@ services:
 
   s_contact_api:
     container_name: c_contact_api
-    image: salihcantekin/contactapi
+    image: metytc/contactapi
     build:
       context: .
       dockerfile: Services/Contact.API/Contact.API/Dockerfile
@@ -26,7 +26,7 @@ services:
 
   s_res_api:
     container_name: c_res_api
-    image: salihcantekin/resapi
+    image: metytc/resapi
     build:
       context: .
       dockerfile: Services/Reservation.API/Reservation.API/Dockerfile
